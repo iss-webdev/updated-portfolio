@@ -668,7 +668,7 @@ footer {
 
     .page-4 {
         margin: none;
-        min-height: 110vh;
+        min-height: 130vh;
     }
 
     .page-4 h1 {
@@ -681,13 +681,14 @@ footer {
     }
 
     .page-5 {
-        min-height: 230vh;
+        min-height: 250vh;
+        margin-top: 40px;
     }
 
     .page-5 h1 {
         transform: none;
         text-align: center;
-        margin-top: 100px;
+        margin-top: 80px;
     }
 
     .grid {
@@ -724,6 +725,10 @@ footer {
     #btn-4 {
         transform: none;
         transform: translateX(-30px);
+    }
+
+    .page-6{
+        min-height: 105vh;
     }
 
     .page-6 .container {
