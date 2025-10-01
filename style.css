@@ -512,7 +512,7 @@ a:hover {
 }
 
 #btn-6 {
-    transform: translateX(450px);
+    transform: translateX(300px);
 }
 
 footer {
@@ -556,10 +556,6 @@ footer {
         display: flex;
     }
 
-    a:hover{
-        color: white;
-    }
-    
     .first {
         min-height: 80vh;
         padding-top: 100px;
@@ -658,7 +654,7 @@ footer {
     }
 
     .second-grid .h3 {
-        margin-left: 110px;
+        margin-left: 160px;
     }
 
     .page-6 {
@@ -706,7 +702,7 @@ footer {
         padding: 10px;
         width: 50%;
         font-size: 18px;
-        margin-left: 40px;
+        margin-left: 80px;
         display: block;
     }
 
@@ -716,3 +712,122 @@ footer {
     }
 }
 
+@media (min-width: 900px) {
+
+    .first,
+    .page-2,
+    .page3,
+    .page-4,
+    .page-5,
+    .page-6 {
+        overflow: hidden;
+    }
+
+    .text-1 {
+        margin-left: -420px;
+    }
+
+    .page-3 {
+        margin-top: 30px;
+    }
+
+    .page-3 h1 {
+        transform: translateX(530px);
+    }
+
+    .test {
+        margin-left: 200px;
+    }
+
+    .page-4 h1 {
+        transform: translateX(400px);
+    }
+
+    #left {
+        margin-left: 600px;
+    }
+
+    .third-gird,
+    .first-grid,
+    .second-grid {
+        max-width: 300px;
+    }
+
+    .second-grid,
+    .third-gird {
+        margin-left: 30px;
+    }
+
+    .third-gird {
+        margin-right: 20px;
+    }
+
+    .page-5 {
+        height: 112vh;
+    }
+
+    .page-5 h1 {
+        margin-top: 20px;
+    }
+
+    .page-6 h1 {
+        margin-top: 20px;
+        margin-left: -100px;
+    }
+
+    .container {
+        margin-left: 30px;
+    }
+
+    .information {
+        margin-right: 30px;
+    }
+
+    .inputs {
+        transform: translateX(80px);
+    }
+
+    #btn-4 {
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+
+    .second-grid .h3 {
+        margin-left: 150px;
+    }
+
+    .page-5 h1 {
+        margin-left: -160px;
+    }
+
+    #btn-6 {
+        margin-left: -140px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .about .text-1 {
+        margin-left: -300px;
+    }
+
+    .inputs {
+        transform: translateX(140px);
+    }
+
+    .third-gird,
+    .first-grid,
+    .second-grid {
+        max-width: 400px;
+    }
+
+    .second-grid .h3{
+        margin-left: 220px;
+        padding-left: 90px;
+    }
+
+    #btn-6 {
+        margin-left: 0px;
+    }
+
+}
