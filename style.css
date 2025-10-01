@@ -556,6 +556,10 @@ footer {
         display: flex;
     }
 
+    a:hover{
+        color: white;
+    }
+    
     .first {
         min-height: 80vh;
         padding-top: 100px;
