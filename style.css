@@ -610,7 +610,8 @@ footer {
     }
 
     .btn-2 {
-        margin-left: 0;
+        margin-left: 20px;
+        margin-top: -50px;
     }
 
     .page-2 .about {
@@ -714,15 +715,16 @@ footer {
         margin-left: 150px;
         margin-top: -48px;
         transform: rotate(40deg);
+        height: fit-content;
     }
 
     .btn-5 {
-        margin-left: 70px;
+        margin-left: auto;
     }
 
     #btn-4 {
         transform: none;
-        transform: translateX(-30px);
+        transform: translateX(-50px);
     }
 
     .page-6 {
