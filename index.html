@@ -7,7 +7,7 @@
     <title>ISS portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -28,9 +28,9 @@
         </header>
         <div class="content">
             <div class="text">
-                <h3>Hello, This is</h3> <br>
-                <h1>ISSAM</h1> <br>
-                <h3> Your Go-To Freelance Web Developer for Affortable Static Sites. <br>
+                <h3 class="h1">Hello, This is</h3> <br>
+                <h1 class="h2">ISSAM</h1> <br>
+                <h3 class="h3"> Your Go-To Freelance Web Developer for Affortable Static Sites. <br>
                     Tired of overpriced web devs or clunky templates? <br> I build custom, lighting-fast static sites
                     for
                     small businesses starting from just $1200. <br>
@@ -67,9 +67,13 @@
                 <div class="test-3">
                     <img class="test" id="slide" src="website-1.png" alt="">
                     <img class="test-1" id="slide" src="website-2.png" alt="">
+                    <div class="leftright">
+                        <i class="fa-solid fa-arrow-left fas" id="left"></i>
+                        <i class="fa-solid fa-arrow-right fas" id="right"></i>
+                    </div>
+
                 </div>
             </div>
-            <i class="fa-solid fa-arrow-left fas" id="left"></i> <i class="fa-solid fa-arrow-right fas" id="right"></i>
         </div>
     </section>
 
@@ -122,7 +126,7 @@
                 </div>
 
                 <div class="second-grid">
-                    <h2 class="standard"> STANDARD PLAN</h2> <br>
+                    <h2 class="standard"> STANDARD PLAN </h2> <br>
                     <h3 class="h3">Best Value</h3>
                     <h2 class="amt">$1200 </h2> <br>
                     <h3>
@@ -170,27 +174,40 @@
 
             <div class="information">
                 <div class="inputs">
-                    <h4>YOUR NAME: </h4>
-                    <input type="text" placeholder="Joe Goldberg" class="contact-info" id="name" required> <br> <br>
-                    <h4>YOUR BUSSINESS NAME: </h4>
-                    <input type="text" placeholder="Meta" class="contact-info" id="bName" required> <br> <br>
-                    <h4>YOUR EMAIL: </h4>
-                    <input type="email" placeholder="joegoldberg12@gmail.com" required class="contact-info" id="mail">
-                    <br> <br>
-                    <h4>YOUR PHONE NUMBER: </h4>
-                    <input type="number" placeholder="+1432432423" class="contact-info" id="num" required> <br> <br>
-                    <h4>COUNTRY: </h4>
-                    <input type="text" placeholder="United States" class="contact-info" id="country" required> <br>
+                    <form action="https://formspree.io/f/mpwyrwpd" method="POST">
+                        <label>
+                            <h4>YOUR NAME: </h4>
+                            <input type="text" name="name" placeholder="Joe Goldberg" class="contact-info" id="name"
+                                required> <br>
+                            <br>
+                            <h4>YOUR BUSINESS NAME: </h4>
+                            <input type="text" name="Bname" placeholder="Meta" class="contact-info" id="bName" required>
+                            <br> <br>
+                            <h4>YOUR EMAIL: </h4>
+                            <input type="email" name="email" placeholder="joegoldberg12@gmail.com" required
+                                class="contact-info" id="mail">
+                            <br> <br>
+                            <h4>YOUR PHONE NUMBER: </h4>
+                            <input type="number" name="number" placeholder="+1432432423" class="contact-info" id="num"
+                                required> <br>
+                            <br>
+                            <h4>COUNTRY: </h4>
+                            <input type="text" name="country" placeholder="United States" class="contact-info"
+                                id="country" required>
+                            <br>
+                        </label>
+
+                        <button id="btn-6" type="submit">Send Message</button>
+                    </form>
                 </div>
 
-                <button class="btn-1" id="btn-6">Send Message</button>
             </div>
         </div>
         </div>
     </section>
 
     <footer
-        style="background: #8f009796; padding: 1.5rem 1rem; text-align: center; font-size: 15px; color: #000000; border-top: 1px solid #ddd;">
+        style="background: #10b981c8; padding: 1.5rem 1rem; text-align: center; font-size: 15px; color: #000000; border-top: 1px solid #ddd;">
         <div style="max-width: 1200px; margin: 0 auto;">
             <p>&copy; 2025 Issam – Freelance Static Web Developer. All rights reserved.</p>
             <p style="margin: 0.5rem 0;"><a href="#top" onclick="scrollToTop()"
@@ -199,6 +216,11 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
