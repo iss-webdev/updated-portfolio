@@ -75,6 +75,8 @@ header a::after {
     min-height: 100vh;
     background: #ffffff;
     color: #111827;
+    display: flex;
+    justify-content: center;
     padding-top: 20px;
 }
 
@@ -85,30 +87,36 @@ header a::after {
 
 .text .h1 {
     margin-bottom: 20px;
-    margin-left: 300px;
+    margin-left: 100px;
 }
 
 .text .h2 {
     margin-bottom: 20px;
-    margin-left: 340px;
+    margin-left: 140px;
 }
 
 .first .text {
-    margin-right: 200px;
-    justify-content: center;
-    align-items: center;
+    margin-right: 5px;
     margin-top: 150px;
     font-size: 18px;
 }
 
 .first .text .h3 {
-    margin-left: 400px;
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
     font-size: 24px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-bottom: 50px;
 }
 
-.btn-1,
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-left: -40px;
+}
+
+.btn-1, 
 .btn-2 {
     margin-top: 20px;
     padding: 10px;
@@ -118,11 +126,10 @@ header a::after {
     width: 150px;
     justify-content: center;
     height: 40px;
-    background-color: #10b98172;
+    background-color: #10b981;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease-out;
-    margin-left: 600px;
 }
 
 .btn-2 {
@@ -140,7 +147,7 @@ header a::after {
     transform: scale(1.02);
     background-color: #10b981c1;
     color: white;
-    box-shadow: 0 8px 8px #10b98193;
+    box-shadow: 0 8px 8px #10b981;
 }
 
 .page-2 {
@@ -156,7 +163,7 @@ header a::after {
     box-shadow: 0 10px 20px #10b9817b;
     border-radius: 20px;
     font-weight: 800;
-    margin-left: 30px;
+    margin-left: 60px;
 }
 
 .text-1 {
@@ -253,7 +260,8 @@ header a::after {
 
 .page-4 h1 {
     font-family: 'montserrat';
-    transform: translateX(530px);
+    display: flex;
+    justify-content: center;
     margin-top: 40px;
     margin-bottom: 70px;
 }
@@ -294,7 +302,8 @@ header a::after {
 
 .page-5 h1 {
     font-family: 'montserrat';
-    transform: translateX(650px);
+    display: flex;
+    justify-content: center;
     margin-bottom: 70px;
     font-weight: 800;
 }
@@ -405,13 +414,13 @@ header a::after {
 .second-grid .h3 {
     position: absolute;
     top: 15px;
-    left: 70%;
+    left: 65%;
     transform: rotate(40deg);
     background-color: #10b981;
     color: white;
     padding: 5px;
     border-radius: 5px;
-    padding-left: 50px;
+    padding-left: 65px;
     padding-right: 50px;
     white-space: nowrap;
 }
@@ -431,7 +440,7 @@ header a::after {
     width: 150px;
     height: 40px;
     color: white;
-    background-color: #10b9817b;
+    background-color: #10b981;
     cursor: pointer;
     transition: all 0.3s ease-out;
 }
@@ -528,7 +537,7 @@ a:hover {
     border: none;
     width: 150px;
     height: 40px;
-    background-color: #10b98172;
+    background-color: #10b981;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -584,35 +593,19 @@ footer {
     }
 
     .first {
-        min-height: 80vh;
+        min-height: 110vh;
         overflow: hidden;
-        padding-top: 100px;
-        background: linear-gradient(110deg, #dedcdcbe 50%, rgba(134, 0, 134, 0.802) 50%);
     }
 
     .content {
         margin-left: 10px;
         font-size: 22px;
-        text-align: center;
     }
 
     .text {
         margin-top: 60px;
         font-size: 16px;
         padding: 0 15px;
-        text-align: center;
-    }
-
-    .btn-1,
-    .btn-2 {
-        width: 120px;
-        font-size: 16px;
-        height: 36px;
-    }
-
-    .btn-2 {
-        margin-left: 20px;
-        margin-top: -50px;
     }
 
     .page-2 .about {
@@ -632,12 +625,7 @@ footer {
         width: 90%;
         margin: auto;
         margin-right: 30px;
-    }
-
-    .test-1 {
-        width: 90%;
-        margin-right: 10px;
-        margin: auto;
+        margin-left: 30px;
     }
 
     .test:hover {
@@ -650,7 +638,8 @@ footer {
 
     .portfolio h1 {
         transform: none;
-        margin-left: 140px;
+        display: flex;
+        justify-content: center;
     }
 
     .text-1 h1,
@@ -667,7 +656,8 @@ footer {
 
     .page-4 h1 {
         transform: none;
-        margin-left: 10px;
+        display: flex;
+        justify-content: center;
     }
 
     .page-5 {
@@ -698,7 +688,7 @@ footer {
     }
 
     .second-grid .h3 {
-        left: 66%;
+        left: 60%;
     }
 
     .page-6 {
@@ -711,7 +701,6 @@ footer {
         justify-content: center;
         align-items: center;
         max-width: 100%;
-        margin-right: 110px;
         flex-direction: row;
     }
 
@@ -758,3 +747,111 @@ footer {
         padding: 10px;
     }
 }
+
+/* @media (min-width: 900px) {
+
+    .first,
+    .page-2,
+    .page3,
+    .page-4,
+    .page-5,
+    .page-6 {
+        overflow: hidden;
+    }
+
+    .text-1 {
+        margin-left: -420px;
+    }
+
+    .page-3 {
+        margin-top: 30px;
+    }
+
+    .page-3 h1 {
+        transform: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .test,
+    .test-1 {
+        margin: auto;
+        margin-top: 0px;
+    }
+
+    .page-4 h1 {
+        transform: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    #left,
+    #right {
+        transform: none;
+        margin: auto;
+    }
+
+    .third-gird,
+    .first-grid,
+    .second-grid {
+        max-width: 300px;
+    }
+
+    .second-grid .h3 {
+        transform: none;
+    }
+
+    .second-grid,
+    .third-gird {
+        margin-left: 30px;
+    }
+
+    .third-gird {
+        margin-right: 20px;
+    }
+
+    .page-5 {
+        height: 112vh;
+    }
+
+    .page-5 h1 {
+        margin-top: 20px;
+    }
+
+    .page-6 h1 {
+        margin-top: 20px;
+        margin-left: -100px;
+    }
+
+    .container {
+        margin-left: 30px;
+    }
+
+    .information {
+        margin-right: 30px;
+    }
+
+    .inputs {
+        transform: translateX(80px);
+    }
+
+    #btn-4 {
+        margin-left: -10px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .second-grid .h3 {
+        margin-left: 150px;
+    }
+
+    .page-5 h1 {
+        margin-left: -160px;
+    }
+
+    #btn-6 {
+        margin-left: 140px;
+    }
+
+}
+
