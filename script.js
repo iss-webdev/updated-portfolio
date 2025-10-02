@@ -6,12 +6,15 @@ const web = document.querySelector('.test');
 left.addEventListener('click', (e) => {
         web.classList.add('clicked');
         webTwo.classList.add('click');
-
+        left.style.display = 'none';
+        right.style.display = '';
 });
 
 right.addEventListener('click', () => {
     web.classList.remove('clicked');
     webTwo.classList.remove('click');
+    right.style.display = 'none';
+    left.style.display = '';
 });
 
 
@@ -114,6 +117,5 @@ const navLinks = document.querySelector(".ul");
 hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
-
 
 
