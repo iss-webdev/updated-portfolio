@@ -618,6 +618,7 @@ footer {
 
     .first {
         overflow: hidden;
+        margin-bottom: 30px;
     }
 
     .first .h1,
