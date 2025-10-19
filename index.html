@@ -7,17 +7,20 @@
     <title>ISS portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <main class="first" id="home">
         <header>
-
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
             </div>
             <ul class="ul">
+                <div class="wrong">
+                    <i class="fa-solid fa-circle-xmark wrong"></i>
+                </div>
                 <li><a href="#home" class="home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -34,8 +37,9 @@
                     for
                     small businesses starting from just $1200. <br>
                     Responsive, SEO-ready and hassle-free-no monthly fees or tech headaches.</h3>
-                <button class="btn-1"><a href="#contact">CONTACT</a></button>
-                <button class="btn-2"><a href="#service">SERVICES</a></button>
+                <div class="buttons"><button class="btn-1"><a href="#contact">CONTACT</a></button> <button
+                        class="btn-2"><a href="#service">SERVICES</a></button> </div>
+
             </div>
         </div>
     </main>
@@ -70,7 +74,29 @@
                         <i class="fa-solid fa-arrow-left fas" id="left"></i>
                         <i class="fa-solid fa-arrow-right fas" id="right"></i>
                     </div>
-
+                    <div class="newPro">
+                        <h2 class="heading1">UPCOMING PROJECTS</h2>
+                    </div>
+                    <div class="project">
+                        <div class="projects">
+                            <div class="grey">
+                                <h2>LOADING...</h2>
+                                <button class="btn-comin">coming soon</button>
+                            </div>
+                        </div>
+                        <div class="projects-1">
+                            <div class="grey">
+                                <h2>LOADING...</h2>
+                                <button class="btn-comin">coming soon</button>
+                            </div>
+                        </div>
+                        <div class="projects-1">
+                            <div class="grey">
+                                <h2>LOADING...</h2>
+                                <button class="btn-comin">coming soon</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,7 +109,7 @@
                 <h2>What's Included in Your $1,200 Site </h2> <br><br><br>
                 <h3>- Custom Responsive Design: Mobile-friendly layout that looks great on phones, tablets, and
                     desktops. <br><br><br>
-                    - Up to 5 Essential Pages: Home, About, Services, Portfolio, faq, google maps and Contact—tailored to your story.
+                    - Up to 5 Essential Pages: Home, About, Services, Portfolio, and Contact—tailored to your story.
                     <br><br><br>
                     - Basic SEO Optimization: Keyword-friendly structure and meta tags to help you show up in
                     searches.<br><br><br>
@@ -216,6 +242,10 @@
 
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
