@@ -305,7 +305,6 @@ header a::after {
     transform: translateX(120px);
 }
 
-
 .page-4 {
     margin-left: 30px;
     font-family: 'Courier New', Courier, monospace;
@@ -670,7 +669,7 @@ footer {
         display: none;
     }
 
-    .close:hover{
+    .close:hover {
         color: black;
     }
 
@@ -689,7 +688,7 @@ footer {
     }
 
     header a:hover {
-       color: black;
+        color: black;
     }
 
     .ul.show {
@@ -781,15 +780,27 @@ footer {
         justify-content: flex-start;
     }
 
-    .project {
-        display: flex;
-        flex-direction: column;
-    }
-
     .projects,
     .projects-1 {
-        width: none;
-        margin: 10px;
+        min-width: 300px;
+        margin-left: 12px;
+        margin-right: 10px;
+    }
+
+    .grey {
+        min-width: 260px;
+    }
+
+    .projects .btn-comin {
+        margin-left: 80px;
+    }
+
+    .projects-1 .btn-comin {
+        margin-left: 80px;
+    }
+
+    .grey h2 {
+        transform: translateX(60px);
     }
 
     .text-1 h1,
