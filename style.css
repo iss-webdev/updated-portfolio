@@ -14,21 +14,12 @@ section {
     scroll-margin-top: 40px;
 }
 
-.hamburger,
-.wrong {
+.menu {
     display: none;
     flex-direction: column;
     cursor: pointer;
     gap: 6px;
     margin-right: 20px;
-}
-
-.hamburger span {
-    width: 28px;
-    height: 3px;
-    background: black;
-    border-radius: 2px;
-    transition: all 0.3s ease;
 }
 
 header {
@@ -41,17 +32,8 @@ header {
     height: 100px;
 }
 
-.wrong {
-    font-size: 30px;
-    align-self: flex-end;
-    margin-right: 20px;
-    cursor: pointer;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-}
-
 header li {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 header ul {
@@ -61,6 +43,10 @@ header ul {
     margin-right: 60px;
     align-items: center;
     gap: 50px;
+}
+
+.close {
+    display: none;
 }
 
 header a {
@@ -650,7 +636,8 @@ footer {
         flex-direction: column;
     }
 
-    .projects, .projects-1 {
+    .projects,
+    .projects-1 {
         margin-left: 20px;
     }
 
@@ -670,38 +657,43 @@ footer {
         scroll-margin-top: 90px;
     }
 
-    header {
-        padding: 10px 0;
-    }
-
-    .hamburger {
+    .menu {
         display: flex;
-        margin: 20px;
-        justify-content: flex-end;
+        align-items: flex-end;
+        margin-top: 40px;
+        margin-left: 20px;
+        font-size: 18px;
     }
 
-    ul.active~.wrong {
-        opacity: 1;
+    .close {
+        font-size: 20px;
+        display: none;
     }
 
-    .ul {
+    .close:hover{
+        color: black;
+    }
+
+    header ul {
         display: none;
         flex-direction: column;
-        gap: 10px;
+        background-color: #10b981;
         position: absolute;
-        width: 80%;
-        border: 1px solid;
         border-radius: 20px;
-        background: rgb(128, 128, 128);
+        top: 30px;
+        width: 100%;
+        font-size: 20px;
+        text-align: right;
         padding: 20px 0;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        align-items: center;
-        justify-content: flex-start;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    ul.active {
+    header a:hover {
+       color: black;
+    }
+
+    .ul.show {
         display: flex;
-        top: 0;
     }
 
     .first {
@@ -794,7 +786,8 @@ footer {
         flex-direction: column;
     }
 
-    .projects, .projects-1 {
+    .projects,
+    .projects-1 {
         width: none;
         margin: 10px;
     }
