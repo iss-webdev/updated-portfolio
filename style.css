@@ -73,6 +73,7 @@ header a::after {
     display: flex;
     justify-content: center;
     padding-top: 20px;
+    overflow: hidden;
 }
 
 .content {
@@ -81,13 +82,33 @@ header a::after {
 }
 
 .text .h1 {
-    margin-bottom: 20px;
-    margin-left: 100px;
+    display: flex;
 }
 
 .text .h2 {
-    margin-bottom: 20px;
-    margin-left: 140px;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid;
+    animation: typing 1.5s steps(50) forwards,
+        blink 1s step-end infinite;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
 .first .text {
@@ -300,9 +321,31 @@ header a::after {
 .grey h2 {
     font-family: "Bitcount Single Ink", sans-serif;
     color: transparent;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid;
+    margin-left: 80px;
     text-shadow: 0 0 2px white;
     margin-top: 100px;
-    transform: translateX(120px);
+    animation: typing 2s steps(22) infinite alternate,
+        blink 1s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        background-color: transparent;
+    }
 }
 
 .page-4 {
@@ -654,6 +697,7 @@ footer {
 
     section {
         scroll-margin-top: 90px;
+        overflow: hidden;
     }
 
     .menu {
@@ -695,15 +739,42 @@ footer {
         display: flex;
     }
 
+    .text .h2 {
+        font-size: 25px;
+        overflow: hidden;
+        display: flex;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 1px solid;
+        animation: typing 1.5s steps(50) forwards,
+            blink 1s step-end infinite;
+
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+
     .first {
         overflow: hidden;
         margin-bottom: 40px;
     }
 
-    .first .h1,
-    .h2 {
+    .text h1 {
         display: flex;
-        justify-content: left;
+        align-items: center;
     }
 
     .content {
@@ -797,10 +868,6 @@ footer {
 
     .projects-1 .btn-comin {
         margin-left: 80px;
-    }
-
-    .grey h2 {
-        transform: translateX(60px);
     }
 
     .text-1 h1,
