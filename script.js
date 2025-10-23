@@ -4,10 +4,10 @@ const webTwo = document.querySelector('.test-1');
 const web = document.querySelector('.test');
 
 left.addEventListener('click', (e) => {
-        web.classList.add('clicked');
-        webTwo.classList.add('click');
-        left.style.display = 'none';
-        right.style.display = '';
+    web.classList.add('clicked');
+    webTwo.classList.add('click');
+    left.style.display = 'none';
+    right.style.display = '';
 });
 
 right.addEventListener('click', () => {
@@ -83,39 +83,50 @@ butn.addEventListener('click', () => {
     }
 })
 
-function openTwitter(){
+function openTwitter() {
     const x = document.querySelector('.emoji');
-    x.addEventListener('click', (e) =>{
+    x.addEventListener('click', (e) => {
         window.open("https://www.twitter.com/iss48934665");
     });
 }
 
-function openlink(){
+function openlink() {
     const link = document.getElementById('link');
-    link.addEventListener('click', () =>{
+    link.addEventListener('click', () => {
         window.open('https://www.linkedin.com/in/issam-issam-b48b33230/');
     });
 }
 
-function opengit(){
+function opengit() {
     const git = document.getElementById('git');
-    git.addEventListener('click', () =>{
+    git.addEventListener('click', () => {
         window.open('https://github.com/iss-webdev');
     });
 }
 
-function openmail(){
+function openmail() {
     const mail = document.getElementById('mail');
-    mail.addEventListener('click', () =>{
+    mail.addEventListener('click', () => {
         window.open('https://mail.google.com/mail/u/0/?hl=en#inbox?compose=GTvVlcSKjDcxrkCJTHbHPGmXLhGJGZlLQxXFxMNRFsqmsKMBTGZvPKHGGJRMLdwHvKVVssRXLVGCN');
     });
 }
 
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.querySelector(".ul");
+const menu = document.querySelector('.menu');
+const closemenu = document.querySelector('.close');
+const navlink = document.querySelector('.ul');
 
-hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
+menu.addEventListener('click', (e) => {
+    e.preventDefault();
+    navlink.classList.toggle('show');
+
+    if (navlink.classList.contains('show')) {
+        closemenu.style.display = 'flex';
+    }
 
 
+    closemenu.addEventListener('click', (e) => {
+        e.preventDefault();
+        navlink.classList.remove('show');
+    })
+
+})
