@@ -738,6 +738,15 @@ footer {
         display: flex;
     }
 
+    .text .h2 {
+        font-size: 20px;
+        overflow: hidden;
+        display: flex;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 1px solid;
+    }
+
     .first {
         overflow: hidden;
         margin-bottom: 40px;
