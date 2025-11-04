@@ -723,7 +723,6 @@ footer {
     .bottom {
         width: 100%;
         display: flex;
-        justify-content: space-between;
         height: 100px;
         position: fixed;
         bottom: 0;
@@ -731,11 +730,15 @@ footer {
     }
 
     .bottom li {
-        margin: 20px;
+        margin-bottom: 20px;
+        margin-left: 15px;
+        color: white;
     }
 
     .bottom a {
         font-size: 30px;
+        margin-left: 10px;
+        padding: 2px;
     }
 
     .bottom a:hover {
