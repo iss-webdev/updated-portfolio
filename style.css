@@ -14,6 +14,14 @@ section {
     scroll-margin-top: 40px;
 }
 
+.bottom {
+    display: none;
+}
+
+.title {
+    margin: 30px;
+}
+
 .menu {
     display: none;
     flex-direction: column;
@@ -33,7 +41,7 @@ header {
 }
 
 header li {
-    margin-top: 20px;
+    margin-top: -30px;
 }
 
 header ul {
@@ -661,6 +669,19 @@ footer {
 
 @media (max-width: 900px) {
 
+    header ul {
+        display: none;
+    }
+
+    .bottom {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        bottom: 0;
+        background-color: #10b981;
+        height: 60px;
+    }
+
     .portfolio h3 {
         margin: 0px;
         margin-left: 50px;
@@ -690,6 +711,36 @@ footer {
         font-size: 14px;
         padding-left: 20px;
     }
+
+    .information {
+        margin-bottom: 150px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+    }
+
+    .bottom li {
+        margin: 20px;
+    }
+
+    .bottom a {
+        font-size: 30px;
+    }
+
+    .bottom a:hover {
+        color: black;
+    }
 }
 
 @media (max-width: 600px) {
@@ -700,42 +751,11 @@ footer {
     }
 
     .menu {
-        display: flex;
-        align-items: flex-end;
-        margin-top: 40px;
-        margin-left: 20px;
-        font-size: 18px;
-    }
-
-    .close {
-        font-size: 20px;
         display: none;
-    }
-
-    .close:hover {
-        color: black;
     }
 
     header ul {
         display: none;
-        flex-direction: column;
-        background-color: #10b981;
-        position: absolute;
-        border-radius: 20px;
-        top: 30px;
-        width: 100%;
-        font-size: 20px;
-        text-align: right;
-        padding: 20px 0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    header a:hover {
-        color: black;
-    }
-
-    .ul.show {
-        display: flex;
     }
 
     .text .h2 {
@@ -946,8 +966,12 @@ footer {
         display: block;
     }
 
+    .information {
+        margin-bottom: 150px;
+    }
+
+
     footer {
-        text-align: center;
-        padding: 10px;
+        display: none;
     }
 }
